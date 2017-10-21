@@ -4,6 +4,9 @@ Koolshare Asuswrt-Merlin shadowsocks Changelog
 shadowsocks merlin 插件于2017年07月17日下架软件中心，就此封版，以后不再更新。
 
 ===========================================
+3.6.3
+   - fix	修复ssr的ctr系列加密支持
+
 3.6.2
    - update	更新shadowsocks-libev到最新;
    - update	更新shadowsocksR-libev，支持auth_chain_c/d/e/f协议;

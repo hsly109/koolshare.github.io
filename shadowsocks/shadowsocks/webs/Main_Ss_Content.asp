@@ -1871,7 +1871,7 @@ function toggle_func() {
 		});
 	$j("#update_logo").click(
 		function() {
-			window.open("https://github.com/koolshare/koolshare.github.io/blob/acelan_softcenter_ui/shadowsocks/Changelog.txt");
+			window.open("https://github.com/maojy/koolshare.github.io/blob/acelan_softcenter_ui/shadowsocks/Changelog.txt");
 		});
 	$j("#log_content2").click(
 		function() {
