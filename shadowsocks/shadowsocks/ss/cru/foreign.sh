@@ -1,8 +1,11 @@
 #!/bin/sh
 LOGTIME=$(date "+%Y-%m-%d %H:%M:%S")
-/usr/sbin/wget -4 --spider --quiet --tries=2 --timeout=2 www.google.com.tw
 
-if [ "$?" == "0" ]; then
+URL="http://www.google.com.tw"
+result=`curl -4 -o /dev/null -I -s -m 2 --connect-timeout 2 -w %{http_code} $URL`
+status=`echo $result`
+
+if [ "$status" == "200" ]; then
   log='[ '$LOGTIME' ] working...'
 else
   log='[ '$LOGTIME' ] Problem detected!'
