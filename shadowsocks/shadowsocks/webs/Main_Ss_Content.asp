@@ -199,7 +199,7 @@ function update_ss_ui(obj) {
 			}
 			continue;
 		} else if (field == "ss_basic_rss_protocol") {
-			if (obj[field] != "origin" && obj[field] != "verify_simple" && obj[field] != "verify_sha1" && obj[field] != "auth_sha1" && obj[field] != "auth_sha1_v2" && obj[field] != "auth_sha1_v4" && obj[field] != "auth_aes128_md5" && obj[field] != "auth_aes128_sha1" && obj[field] != "auth_chain_a" && obj[field] != "auth_chain_b" && obj[field] != "auth_chain_c" && obj[field] != "auth_chain_d" && obj[field] != "auth_chain_e" && obj[field] != "auth_chain_f") {
+			if (obj[field] != "origin" && obj[field] != "verify_simple" && obj[field] != "verify_sha1" && obj[field] != "auth_sha1" && obj[field] != "auth_sha1_v2" && obj[field] != "auth_sha1_v4" && obj[field] != "auth_aes128_md5" && obj[field] != "auth_aes128_sha1" && obj[field] != "auth_chain_a" && obj[field] != "auth_chain_b" && obj[field] != "auth_chain_c" && obj[field] != "auth_chain_d" && obj[field] != "auth_chain_e") {
 				$j("#ss_basic_rss_protocol").val("origin");
 			} else {
 				$j("#ss_basic_rss_protocol").val(obj.ss_basic_rss_protocol);
@@ -2631,7 +2631,6 @@ function write_proc_status(){
 																		<option value="auth_chain_c">auth_chain_c</option>
 																		<option value="auth_chain_d">auth_chain_d</option>
 																		<option value="auth_chain_e">auth_chain_e</option>
-																		<option value="auth_chain_f">auth_chain_f</option>
 																	</select>
 																</td>
 															</tr>
@@ -2813,7 +2812,6 @@ function write_proc_status(){
 															<option value="auth_chain_c">auth_chain_c</option>
 															<option value="auth_chain_d">auth_chain_d</option>
 															<option value="auth_chain_e">auth_chain_e</option>
-															<option value="auth_chain_f">auth_chain_f</option>
 														</select>
 														<span id="ss_basic_rss_protocol_alert" style="margin-left:5px;margin-top:-20px;margin-bottom:0px"></span>
 													</td>

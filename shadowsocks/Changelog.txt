@@ -6,6 +6,7 @@ shadowsocks merlin 插件于2017年07月17日下架软件中心，就此封版�
 ===========================================
 3.6.3
    - fix	修复ssr的ctr系列加密支持
+   - update 移除chain_f协议（编译的无法运行，c/e协议能用，但是不稳定，有时候状态为working依然不能访问。working状态是根据www.google.com.tw的http状态码是否为200判断的）
 
 3.6.2
    - update	更新shadowsocks-libev到最新;

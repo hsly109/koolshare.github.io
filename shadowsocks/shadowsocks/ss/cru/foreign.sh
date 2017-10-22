@@ -1,7 +1,7 @@
 #!/bin/sh
 LOGTIME=$(date "+%Y-%m-%d %H:%M:%S")
 
-URL="http://www.google.com.tw"
+URL="https://www.google.com.tw"
 result=`curl -4 -o /dev/null -I -s -m 2 --connect-timeout 2 -w %{http_code} $URL`
 status=`echo $result`
 
